@@ -1,0 +1,45 @@
+{
+  "name": "corex-nuage",
+  "version": "1.0.0",
+  "description": "Corex-Nuage",
+  "main": "main.js",
+  "author": "Corex Institut",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.7.2",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.corex.nuage",
+    "productName": "Corex Nuage",
+    "asar": true,
+    "compression": "maximum",
+    "files": [
+      "main.js",
+      "index.js",
+      "ressources/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "ressources/nuage.ico"
+    },
+    "nsis": {
+      "installerIcon": "ressources/nuage.ico",
+      "uninstallerIcon": "ressources/nuage.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    }
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
