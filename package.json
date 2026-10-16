@@ -31,8 +31,8 @@
       "icon": "ressources/nuage.ico"
     },
     "nsis": {
-      "installerIcon": "ressources/nuage.ico",
-      "uninstallerIcon": "ressources/nuage.ico",
+      "installerIcon": "ressources/ico.png",
+      "uninstallerIcon": "ressources/ico.png",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "deleteAppDataOnUninstall": true
